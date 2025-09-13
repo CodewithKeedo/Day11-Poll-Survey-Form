@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll/Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+            <h2>Survey Form</h2>
+            <form  id="surveyForm">
+              <!--Radio Question-->
+              <fieldset>
+                <legend>1. How often do you use the internet?</legend>
+                <label><input type="radio" name="internet" value="Daily">Daily</label>
+                <label><input type="radio" name="internet" value="Weekly">Weekly</label>
+                <label><input type="radio" name="internet" value="Rarely">Rarely</label>
+                <span class="error" id="err-radio">Please select one option</span>
+              </fieldset>
+
+              <!--Checkbox Question-->
+              <fieldset>
+                <legend>2. What devices do you use? (Select atleast one)</legend>
+                <label><input type="checkbox" name="device" value="Phone">Phone</label>
+                <label><input type="checkbox" name="device" value="Tablet">Tablet</label>
+                <label><input type="checkbox" name="device" value="Laptop">Laptop</label>
+                <span class="error" id="err-checkbox">Please select atleast one device.</span>
+              </fieldset>
+
+              <button type="submit">Submit</button>
+            </form>
+
+            <!--Success message-->
+            <div id="successMsg" class="success"></div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
